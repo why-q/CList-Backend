@@ -1,0 +1,11 @@
+LOG:
+  PATH: ./logs/test.log
+  LEVEL: INFO
+DATABASE:
+  URL: sqlite:///./test.db
+  PATH: ./test.db
+SERVER:
+  HOST: 127.0.0.1
+  PORT: 8000
+ALEMBIC:
+  DIR: ./app/migration
