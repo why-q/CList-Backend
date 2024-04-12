@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Backend of the clist project."
+authors = ["Kascal <kascal0423@proton.me>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9.10,<3.12"
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+sqlalchemy = "^2.0.29"
+selenium = "^4.19.0"
+unstructured = "^0.13.2"
+click = "^8.1.7"
+dynaconf = "^3.2.5"
+loguru = "^0.7.2"
+alembic = "^1.13.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+httpx = "^0.27.0"
+isort = "^5.13.2"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "app.cmd:main"
